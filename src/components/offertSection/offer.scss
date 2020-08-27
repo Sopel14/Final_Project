@@ -1,0 +1,36 @@
+@import '../main/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.offer{
+    width: 100vw;
+    background-color: $main-color;
+    &__title{
+        font-size: 6rem;
+        margin: 20px 0;
+        text-align: center;
+        color: $third-color;
+        font-family: 'Dancing Script', cursive;
+    }
+    &__content{
+        color: $third-color;
+        width: 90%;
+        margin: 30px auto;
+        font-size: 1.2rem;
+    }
+}
+
+.basic{
+    border-radius: 45px;
+    border: 5px solid $basic;
+    padding: 15px 25px;
+}
+.silver{
+    border-radius: 45px;
+    border: 5px solid $silver;
+    padding: 15px 25px;
+}
+.gold{
+    border-radius: 45px;
+    border: 5px solid $gold;
+    padding: 15px 25px;
+}

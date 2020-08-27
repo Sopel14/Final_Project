@@ -1,0 +1,31 @@
+@import '../main/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.gallery{
+    width: 100vw;
+    background-color: $main-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__title{
+        font-family: 'Dancing Script', cursive;
+        color: $third-color;
+        font-size: 7rem;
+        margin: 20px 0;
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+    &__foto{
+        margin: 10px;
+        width: 180px;
+        height: 180px;
+        transition: 1s;
+        object-fit: contain;
+        cursor: pointer;
+        &:hover{
+            width: 600px;
+            height: 600px;
+        }
+    }
+}
