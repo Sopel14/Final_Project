@@ -4,27 +4,78 @@
 .home{
     width: 100vw;
     height: 100vh;
+    position: relative;
+    &::after{
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+    &__box{
+        position: relative;
+        z-index: 2;
+    }
+    &__link{
+        color: $third-color;
+        font-family: 'Dancing Script', cursive;
+        font-size: 5rem;
+        text-decoration: none;
+        z-index: 2;
+        &:hover{
+            color: $second-color;
+        }
+    }
+    &__map{
+        width: 400px;
+        height: 400px;
+        z-index: 2;
+    }
+    &__content{
+        font-size: 1.8rem;
+        text-align: center;
+        color: $third-color;
+        width: 90%;
+        margin: 30px auto;
+    }
+
 }
 .navigation{
-    margin: 100px 100px;
+    margin: 50px 100px;
     &__list{
         display: flex;
         justify-content: space-between;
         &__element{
             list-style: none;
+            z-index: 2;
         }
     }
 }
 .title{
+
     font-size: 4rem;
     color: $third-color;
     margin: 20px 40px;
     font-family: 'Dancing Script', cursive;
+    position: relative;
+    z-index: 3;
+  
+    position: relative;
+    z-index: 2;
+    &__box{
+        height: 35%;
+        background: url("1.jpg");
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 .hyperlink{
     padding: 20px 30px;
-    background-color: $main-color;
+    background-color: transparent;
     color: $third-color;
     text-decoration: none;
     font-size: 2rem;

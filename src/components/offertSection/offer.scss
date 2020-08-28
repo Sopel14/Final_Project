@@ -16,21 +16,22 @@
         width: 90%;
         margin: 30px auto;
         font-size: 1.2rem;
+        z-index: 3;
     }
 }
 
 .basic{
     border-radius: 45px;
-    border: 5px solid $basic;
+    box-shadow: 5px 5px 15px 5px $basic;
     padding: 15px 25px;
 }
 .silver{
     border-radius: 45px;
-    border: 5px solid $silver;
+    box-shadow: 5px 5px 15px 5px $silver;
     padding: 15px 25px;
 }
 .gold{
     border-radius: 45px;
-    border: 5px solid $gold;
+    box-shadow: 5px 5px 15px 5px $gold;
     padding: 15px 25px;
 }

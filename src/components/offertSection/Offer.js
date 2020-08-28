@@ -9,8 +9,6 @@ const Offer = () =>{
             {offer.map(({content, dForget, basic, silver, gold, exterior, wheels, interior, windows, paint, smallCars, mediumCars, largeCars, extraLarge, contact})=>{
                 return (
                 <>
-                    <p className="offer__content">{content}</p>
-                    <p className="offer__content">{dForget}</p>
                     <p className="offer__content basic">{basic}</p>
                     <p className="offer__content silver">{silver}</p>
                     <p className="offer__content gold">{gold}</p>
