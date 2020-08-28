@@ -1,6 +1,6 @@
 const offer = [
     {
-        content:"At A.A.D we would like to offer you some fantastic detailing packages" +  
+        content:"At D.S.A. we would like to offer you some fantastic detailing packages " +  
         "for your car starting from just £25! From now until  the end of august we will offer" +
         "additional 10% off for every paint correction booked in. ",
         dForget:"Don't forget we are also running a competition on our Facebook page where you can win free" +
