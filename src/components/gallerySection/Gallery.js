@@ -1,18 +1,32 @@
-import React from 'react';
-import './gallery.scss';
-import fotos from './fotos';
+import React, { useState } from "react";
+import "./gallery.scss";
+import fotos from "./fotos";
 
-const Gallery = () =>{
+const Gallery = () => {
+  const [slider, setSlider] = useState(0);
 
+  const handleNext = () => {
+    setSlider((prev) => prev + 1);
+    console.log(slider);
+  };
 
-    return(
-        <section id="gallery" className="gallery">
-            <h1 className="gallery__title">Gallery</h1>
-            {fotos.map((element, index)=>{
-                return <img className="gallery__foto" src={element} key={index} data-index={index} />
-            })}
-        </section>
-    )
-}
+  const handlePrevious = () => {
+    setSlider((prev) => prev - 1);
+    console.log(slider);
+  };
+  return (
+    <section id="gallery" className="gallery">
+      <p style={{ color: "white" }} onClick={handlePrevious}>
+        {" "}
+        Previous
+      </p>
+      mapa images
+
+      <p style={{ color: "white" }} onClick={handleNext}>
+        Next
+      </p>
+    </section>
+  );
+};
 
 export default Gallery;
